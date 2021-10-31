@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background: #242424;
+    font-family: 'Work Sans' , sans-serif;
+    font-weight: 300;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    background: #80cbd9
+}
+
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+#myName{
+float: left;
+padding: 10px 0;
+font-size: 20px;
+}
+
+nav{
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 75px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color:#444
+}
+
+nav a::before{
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*----------------------------Navigation Bar------------------------------*/
+
