@@ -67,11 +67,48 @@ nav a::before{
 }
 
 nav a:hover::before {
-    width: 100%
+    width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
 }
 /*----------------------------Navigation Bar------------------------------*/
+.home{
+    position: relative;
 
+}
+#Profile{
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+    border-radius: 12px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home:hover .overlay {
+    opacity: .75;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
