@@ -9,10 +9,10 @@
 </head>
 
 <body>
+    <main>
     <header>
-        <div class= "container">
         <h1 id="myName">Andrew's Portfolio</h1>
-
+    <div class= "container">
     <nav>
         <ul>
             <li><a href="#home">home</a></li>
@@ -22,59 +22,116 @@
         </ul>
     </nav>      
     </header>
-</div>
-<main>
-<container>
+        </div>
 <div>
-    <!-- This is the introduction section of my page giving a small briefing of myself -->
-    <div class="home" id="home">
-        <!--This is a place holder for my image of myself I do not know which one too choose yet-->
-            <img id="Profile" src="./Images/IMG_3122.jpeg"/>
-            <div class="overlay">
-                <div class="text">
-                    <h1>Hello I'm Andrew Nguyen,</h1>
-                    <h2>I am a Software Engineer ready to make dreams happen.</h2>
+    <container class= "Profile_Card">
+
+        <!-- This is the introduction section of my page giving a small briefing of myself -->
+        <div class="profile1 card" id="profile1">
+            <div><!--This is a place holder for my image of myself I do not know which one too choose yet-->
+                <img id="Profile" src="./Images/AN_Yosemite.jpeg"/>
+                    <div class="ProfileOverlay">
+                        <div class="text">
+                            <h1>Hello I'm Andrew Nguyen,</h1>
+                            <h3>I am a Software Engineer ready to make dreams happen.</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </container>
+</div>
+    <!--This is the About me section-->
+<section class="Bodysection" id="about">
+    <h1 class="leftColumn">About me</h1>
+    <div class="rightColumn">
+        <p>I graduated from Northglenn High school with a college certifaction as a Computer Application Specialist. I currently live in Northglenn, CO and plan to move to Kansas City in 2023. Some of my hobbies include playing the violin, cello, kalimba, and ukulele. On my off time I also play video games, study psychology, binge watching, and drawing.
+        </p>
+    </div>
+</section>
+
+<section class="Bodysection" id="projects">
+    <h1 class="leftColumn">projects</h1>
+    <div class="rightColumn">
+        <h3>Here are some of my previous projects I have worked on!</h3>
+    </div>
+
+    <container class="panels">
+        <div>
+            <div class="panel1 card" id="panel1">
+                <!--This is a place holder for now -->
+                <img id="CRP" src="./Images/Code-Refactor_project.png" />
+                    <div class="overlay">
+                    <a href = "https://github.com/BlueAndyN/Code-Refactor_AN">
+                        <div class="text">
+                            <h1>Code Refactor Project</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
+        </div>
+        
+        <div>
+            <div class="panel2 card" id="panel2">
+                <img id="DineOut"
+                        src="./Images/InOrOut_project.png" />
+                    <div class="overlay2">
+                    <a href="https://jacobvandyke194.github.io/InorOut/">
+                        <div class="text2">
+                            <h1>InOrOut project</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </container>
+
+    <container class="panels">
+        <div>
+            <div class="panel1 card" id="panel1">
+                <!--This is a place holder for now -->
+                <img id="CRP" src="./Images/LaFF_project.png" />
+                    <div class="overlay">
+                    <a href = "https://fathomless-cliffs-99430.herokuapp.com/">
+                        <div class="text">
+                            <h1>Love at First Flight</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div class="panel2 card" id="panel2">
+                <img id="DineOut"
+                        src="./Images/Quiz_project.png" />
+                    <div class="overlay2">
+                    <a href="https://blueandyn.github.io/Homework-4-coding-quiz/">
+                        <div class="text2">
+                            <h1>Quiz time!</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </container>
+</section>
+</div>
+
+<section class="Bodysection" id="contact">
+    <h1 class="leftColumn">Contacts</h1>
+    <div class="rightColumn">
+        <div>
+            <div class="contacts" id="contact_A">
+                <h2>Andrew Nguyen's Contacts</h2>
+                <li>
+                    <ul>Gmail: Blueandyn@gmail.com</ul>
+                    <ul>Github: Blueandyn</ul>
+                </li>
+            </div>
+        </div>
     </div>
-    <!--This is the About me section-->
-</div>
-
-<div class="about" id="about">
-    <h1>About me</h1>
-    <h2>Education</h2>
-        <ul>
-            <li>High School Diploma From Northglenn High School</li>
-            <li>Certificate as a Computer Application Specialist from Front Range Community College</li>
-        </ul>
-    <h2>Skills</h2>
-        <ul>
-            <li>Bilingual: Vietnamese, Spanish and French</li>
-            <li>Musical: Violin, Cello, ukulele and Kalimba</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
-    
-</div>
-</container>
-
-<div id="projects">
-    <h1>projects</h1>
-    <h2>Here are some of my previous projects I have worked on!</h2>
-
-</div>
-
-<div id="contact">
-    <h1>Contact</h1>
-    <h2></h2>
+</section>
 
 </div>
 </main>

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #242424;
+    background: #d1d1d1;
     font-family: 'Work Sans' , sans-serif;
     font-weight: 300;
 }
@@ -8,6 +8,32 @@ body {
 .container{
     width: 85%;
     margin: 0 auto;
+}
+.Bodysection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.leftColumn {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    flex: .5;
+    border-right: 3px solid antiquewhite;
+    padding-right: 10px;
+}
+
+.rightColumn {
+    display: flex;
+    flex: 0 0 75%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 header {
@@ -74,26 +100,37 @@ html{
     scroll-behavior: smooth;
 }
 /*----------------------------Navigation Bar------------------------------*/
-.home{
-    position: relative;
 
+.Profile_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin: 0 auto;
 }
+
+.profile1{
+    position: relative;
+    margin: 20px;
+}
+
 #Profile{
     display:block;
     height: auto;
     border-radius: 12px;
-    width: 400px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
-.overlay{
+.ProfileOverlay{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
-    width:400px;
+    width:300px;
     opacity: 0;
     transition: .5s ease;
     background-color: antiquewhite;
@@ -102,7 +139,7 @@ html{
     margin-right: auto;
 }
 
-.home:hover .overlay {
+.profile1:hover .ProfileOverlay {
     opacity: .75;
 }
 .text{
@@ -111,4 +148,72 @@ html{
     left: 50%;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
+}
+
+/* projects */
+.panels{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0px;
+}
+.panel1,
+.panel2 {
+    position: relative;
+    margin: 20px;
+}
+
+#CRP,
+#DineOut {
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: 600px;
+}
+
+.overlay, 
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:600px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+    border-radius: 12px;    
+}
+
+.panel1:hover .overlay,
+.panel2:hover .overlay2 {
+    opacity: .75;
+}
+.text, 
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: black;
+}
+
+.text:active,
+.text2:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.contacts{
+    list-style: none;
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: auto;
+    padding: 10px;
+    background-color: antiquewhite;
 }
